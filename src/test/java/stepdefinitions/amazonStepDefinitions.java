@@ -30,4 +30,22 @@ public class amazonStepDefinitions {
     public void sayfayi_kapatir() {
         Driver.closeDriver();
     }
+
+    @When("java icin arama yapar")
+    public void java_icin_arama_yapar() {
+        amazonPage.aramaKutusu.sendKeys("Java"+ Keys.ENTER);
+    }
+    @Then("sonucun java icerdigini test eder")
+    public void sonucun_java_icerdigini_test_eder() {
+        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("Java"));
+    }
+    @When("ipad icin arama yapar")
+    public void ipad_icin_arama_yapar() {
+        amazonPage.aramaKutusu.sendKeys("ipad"+ Keys.ENTER);
+    }
+    @Then("sonucun ipad icerdigini test eder")
+    public void sonucun_ipad_icerdigini_test_eder() {
+        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("ipad"));
+    }
+
 }
