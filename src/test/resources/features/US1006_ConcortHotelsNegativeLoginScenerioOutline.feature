@@ -1,7 +1,7 @@
 Feature: US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test
 
   @CH
-  Scenario Outline: Farkli kullanici isimleri ile negative test
+  Scenario Outline: TC10 Farkli kullanici isimleri ile negative test
 
     Given kullanici "CHQAUrl" sayfasina gider
     Then CH login linkine tiklar
