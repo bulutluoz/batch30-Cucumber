@@ -71,4 +71,9 @@ public class amazonStepDefinitions {
 
         Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
     }
+
+    @And("sonuc sayisini yazdirir")
+    public void sonucSayisiniYazdirir() {
+        System.out.println(amazonPage.sonucYazisiElementi.getText());
+    }
 }
