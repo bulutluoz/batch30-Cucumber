@@ -1,5 +1,7 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -13,8 +15,11 @@ public class amazonStepDefinitions {
 
     @When("kullanici amazon sayfasina gider")
     public void kullanici_amazon_sayfasina_gider() {
+
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
+
+
     @When("nutella icin arama yapar")
     public void nutella_icin_arama_yapar() {
        amazonPage.aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
@@ -41,6 +46,7 @@ public class amazonStepDefinitions {
     }
     @When("ipad icin arama yapar")
     public void ipad_icin_arama_yapar() {
+
         amazonPage.aramaKutusu.sendKeys("ipad"+ Keys.ENTER);
     }
     @Then("sonucun ipad icerdigini test eder")
@@ -48,4 +54,21 @@ public class amazonStepDefinitions {
         Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("ipad"));
     }
 
+    @And("{string} icin arama yapar")
+    public void icinAramaYapar(String arananKelime) {
+
+            amazonPage.aramaKutusu.sendKeys(arananKelime+ Keys.ENTER);
+    }
+
+    @Then("sonucun {string} icerdigini test eder")
+    public void sonucunIcerdiginiTestEder(String arananKelime) {
+
+        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains(arananKelime));
+    }
+
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String istenenUrl) {
+
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
 }

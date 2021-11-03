@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions (
     features="src/test/resources/features",
     glue="stepdefinitions",
-    tags="@background"  ,
+    tags="@wip"  ,
 
     dryRun= false
         // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir
