@@ -1,8 +1,9 @@
 Feature: US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder
 
+  @rapor
   Scenario: TC07 istenen kelimenin oldugunu test etme
     Given kullanici "amazonUrl" sayfasina gider
-    And "mehmet" icin arama yapar
+    And "armut" icin arama yapar
     Then sonucun "armut" icerdigini test eder
     And sayfayi kapatir
 
