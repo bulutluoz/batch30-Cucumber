@@ -1,4 +1,6 @@
-Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
+Feature: US1009 editor sayfasinda giris yapilabildigini test et
+
+
   @editor
   Scenario Outline: TC11 Edito sayfasina farkli kisiler ekleme
 
@@ -12,12 +14,12 @@ Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
     And editor startdate kutusuna "<startDate>" bilgileri girer
     And editor salary kutusuna "<salary>" bilgileri girer
     And Create tusuna basar
+    Then "<firstName>" ve "<lastName>" girerek kaydin tamamlandigini test eder
 
-    #And editor ilgili kutulara "<firstName>" "<lastName>" "<position>" "<office>" "<extension>" bilgilerini girer
 
 
     Examples:
-    |firstName| lastName|position|office|extension|startDate|salary|
-    |Hakan    |Tetik    |TestLead|Paris |ali      |2021-01-21|60000|
-    |Murat    |Ercoban  |QA      |Kenya |126      |2021/01/20|40000|
-    |Furkan   |Yilmaz   |QA      |Adana |130      |2021.03.21|80.000|
+      |firstName| lastName|position|office|extension|startDate|salary|
+      |Hakan    |Tetik    |TestLead|Paris |ali      |2021-01-21|60000|
+      |Murat    |Ercoban  |QA      |Kenya |126      |2021/01/20|40000|
+      |Furkan   |Yilmaz   |QA      |Adana |130      |2021.03.21|80.000|

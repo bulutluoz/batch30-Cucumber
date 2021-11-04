@@ -1,10 +1,10 @@
 Feature: US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder
 
-  @rapor
+  @rapor2
   Scenario: TC07 istenen kelimenin oldugunu test etme
     Given kullanici "amazonUrl" sayfasina gider
     And "armut" icin arama yapar
-    Then sonucun "armut" icerdigini test eder
+    Then sonucun "elma" icerdigini test eder
     And sayfayi kapatir
 
     # parametre olarak yazdigimiz kelimeyi stepdefinition'da String olarak kullanacaksa
