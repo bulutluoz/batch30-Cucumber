@@ -78,7 +78,7 @@ public class EditorStepDefinitions {
 
         Thread.sleep(2000);
         editorPage.searchKutusu.click();
-        editorPage.searchKutusu.sendKeys(firstname + " " + lastname);
+        editorPage.searchKutusu.sendKeys(firstname + "     " + lastname + "dfdfdd");
         Assert.assertTrue(editorPage.isimAramaIlkSatir.isDisplayed());
 
     }

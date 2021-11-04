@@ -1,7 +1,7 @@
 Feature: US1008 coklu parametreli bir step ile editor kisi ekler
 
 @editor2
-Scenario Outline: TC11 Edito sayfasina farkli kisiler ekleme
+Scenario Outline: TC12 Edito sayfasina farkli kisiler ekleme
 
 Given kullanici "editorUrl" sayfasina gider
 Then new butonuna basar
