@@ -11,7 +11,7 @@ Feature: US1010 test failed olursa screen shot calismali
     Then basligin "techproeducation" icerdigini test eder
     And sayfayi kapatir
 
-  Scenario: TC14 ebay test
+  Scenario: TC16 ebay test
     When kullanici "ebayUrl" sayfasina gider
     Then basligin "ebay" icerdigini test eder
     And sayfayi kapatir

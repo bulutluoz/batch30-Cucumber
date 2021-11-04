@@ -1,51 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="19.071">
-    <testcase classname="US1010 test failed olursa screen shot calismali" name="TC14 Amazon test" time="5.952">
-        <failure message="" type="java.lang.AssertionError">
-            <![CDATA[When kullanici "amazonUrl" sayfasina gider..................................passed
-Then basligin "amazon" icerdigini test eder.................................failed
-And sayfayi kapatir.........................................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.amazonStepDefinitions.basliginIcerdiginiTestEder(amazonStepDefinitions.java:83)
-	at ✽.basligin "amazon" icerdigini test eder(file:///C:/Users/Lenovo/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1010.screenShot.feature:6)
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.376">
+    <testcase classname="US1011 kullanici dogru bilgilerle sayfaya girebilmeli" name="TC17 positive login testi" time="12.914">
+        <system-out>
+            <![CDATA[When kullanici "CHQAUrl" sayfasina gider....................................passed
+Then CH login linkine tiklar................................................passed
+And CH username kutusuna "manager" yazar....................................passed
+And CH password kutusuna "Manager1!" yazar..................................passed
+And CH login butonuna basar.................................................passed
+Then CH basarili giris yapildigini test eder................................passed
 ]]>
-        </failure>
-    </testcase>
-    <testcase classname="US1010 test failed olursa screen shot calismali" name="TC15 techproeducation test" time="8.461">
-        <failure message="" type="java.lang.AssertionError">
-            <![CDATA[When kullanici "techproeducationUrl" sayfasina gider........................passed
-Then basligin "techproeducation" icerdigini test eder.......................failed
-And sayfayi kapatir.........................................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.amazonStepDefinitions.basliginIcerdiginiTestEder(amazonStepDefinitions.java:83)
-	at ✽.basligin "techproeducation" icerdigini test eder(file:///C:/Users/Lenovo/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1010.screenShot.feature:11)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="US1010 test failed olursa screen shot calismali" name="TC14 ebay test" time="4.207">
-        <failure message="" type="java.lang.AssertionError">
-            <![CDATA[When kullanici "ebayUrl" sayfasina gider....................................passed
-Then basligin "ebay" icerdigini test eder...................................failed
-And sayfayi kapatir.........................................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.amazonStepDefinitions.basliginIcerdiginiTestEder(amazonStepDefinitions.java:83)
-	at ✽.basligin "ebay" icerdigini test eder(file:///C:/Users/Lenovo/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1010.screenShot.feature:16)
-]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
