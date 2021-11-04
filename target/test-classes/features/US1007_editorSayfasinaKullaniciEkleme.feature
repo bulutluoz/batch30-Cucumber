@@ -13,7 +13,6 @@ Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
     And editor salary kutusuna "<salary>" bilgileri girer
     And Create tusuna basar
 
-    #And editor ilgili kutulara "<firstName>" "<lastName>" "<position>" "<office>" "<extension>" bilgilerini girer
 
 
     Examples:
