@@ -1,4 +1,4 @@
-@rapor1
+@toplu
 Feature: US1002 amazon background ile arama
 
   Background: amazon sayfasina gitme
