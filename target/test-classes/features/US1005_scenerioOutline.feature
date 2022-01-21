@@ -10,12 +10,14 @@ Feature: US1005 amazonda liste ile arama
     Then sayfayi kapatir
 
 
-
-
     Examples:
     |arananUrun|
     |nutella   |
-    |java      |
-    |ipod      |
-    |armut     |
-    |Apple     |
+    |pencil    |
+    |milk      |
+    |tomatoes  |
+    |popcorn   |
+
+
+
+
